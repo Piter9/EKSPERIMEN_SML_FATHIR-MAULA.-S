@@ -7,8 +7,9 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
  
-def preprocess_data(data, target_column, save_path, label_path, data_path):
+def preprocess_data(target_column, save_path, label_path, data_path):
     # Menentukan fitur numerik dan kategoris
+    data = pd.read_csv('../dataset_raw/healthcare-dataset-stroke_raw.csv')
     column_names = data.columns
     # Mendapatkan nama kolom tanpa kolom target
     column_names = data.columns.drop(target_column)
