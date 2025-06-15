@@ -24,4 +24,4 @@ jobs:
         run: pip install -r preprocessing/requirements.txt
 
       - name: Run preprocessing script
-        run: python preprocessing/automate_Fathir_Maula_S.py
+        run: python preprocessing/test_automate_Fathir_Maula_S.py
