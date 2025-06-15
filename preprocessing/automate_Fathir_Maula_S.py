@@ -28,7 +28,7 @@ def preprocess_data(data, target_column, save_path, label_path, data_path):
     df_header.to_csv(label_path, index=False)
     print(f"Nama kolom berhasil disimpan ke: {label_path}")
  
-    # Pastikan target_column tidak ada di numeric_features atau categorical_features
+   
     if target_column in numeric_features:
         numeric_features.remove(target_column)
     if target_column in categorical_features:
