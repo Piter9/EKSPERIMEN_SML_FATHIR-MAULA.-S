@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: processed-dataset
-          path: dataset_raw/processed.csv
+          path: dataset_raw/
