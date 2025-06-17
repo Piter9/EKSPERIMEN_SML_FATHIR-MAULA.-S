@@ -25,3 +25,9 @@ jobs:
 
       - name: Run preprocessing script
         run: python preprocessing/test_automate_Fathir_Maula_S.py
+
+      - name: Upload processed data as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: processed-dataset
+          path: dataset_raw/processed.csv
